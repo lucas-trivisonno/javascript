@@ -1,37 +1,9 @@
-const peliculas = [
-    {id:1, 
-    nombre:"jumanji", 
-    precio: 800, 
-    imagen:"./public-/jumanji.jpg",
-    },
-    {id:2,
-    nombre:"toy story",
-     precio: 850, 
-    imagen:"./public-/toy story.webp",
-    },
-    {id:3,
-    nombre:"rapidos y furiosos 9",
-    precio: 900,
-    imagen:"./public-/rapidos y furiosos.webp",
-    },
-    {id:4,
-    nombre:"doctor strange",
-    precio: 900,
-    imagen:"./public-/strange.jpg",
-    },
-    {id:5, 
-    nombre:"sonic 2", 
-    precio: 750, 
-    imagen:"./public-/sonic.jpg",
-    },
-    {id:6, 
-     nombre:"buzzlightyear", 
-    precio: 800, 
-    imagen:"./public-/lightyear.jfif",
-    },
-];
-
-const contenedor = document.getElementById("container");
+fetch("./peliculas.json")
+.then((response)=>response.json())
+.then((data)=> {cargarPeliculas(data);});
+const cargarPeliculas = (data)=> {
+    peliculas = data;
+    const contenedor = document.getElementById("container");
 peliculas.forEach((pelicula,indice)=>{
     let card = document.createElement("div");
     card.classList.add("card", "col-md-4", "bg-black", "text-light", "border-light")
@@ -45,6 +17,9 @@ peliculas.forEach((pelicula,indice)=>{
     contenedor.appendChild(card);
 
 });
+
+}
+
 
 let carrito = document.getElementById("cart");
 let total = 0;
