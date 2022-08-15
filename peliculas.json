@@ -1,0 +1,32 @@
+[
+    {"id":1, 
+    "nombre":"jumanji", 
+    "precio": 800, 
+    "imagen":"./public-/jumanji.jpg"
+    },
+    {"id":2,
+    "nombre":"toy story",
+    "precio": 850, 
+    "imagen":"./public-/toy story.webp"
+    },
+    {"id":3,
+    "nombre":"rapidos y furiosos 9",
+    "precio": 900,
+    "imagen":"./public-/rapidos y furiosos.webp"
+    },
+    {"id":4,
+    "nombre":"doctor strange",
+    "precio": 900,
+    "imagen":"./public-/strange.jpg"
+    },
+    {"id":5, 
+    "nombre":"sonic 2", 
+    "precio": 750, 
+    "imagen":"./public-/sonic.jpg"
+    },
+    {"id":6, 
+     "nombre":"buzzlightyear", 
+    "precio": 800, 
+    "imagen":"./public-/lightyear.jfif"
+    }
+]
